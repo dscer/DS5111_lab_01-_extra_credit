@@ -24,10 +24,10 @@ all: pg1065.txt raven_lines.txt number_of_Raven.txt number_of_RAVEN.txt number_o
 
 # make clean which should remove all files generated
 clean:
-	rm ./pg1065.txt
-	rm ./raven_lines.txt
-	rm ./number_of_Raven.txt
-	rm ./number_of_RAVEN.txt
-	rm ./number_of_raven.txt
-	#rm *.txt
+	rm pg1065.txt || true
+	rm raven_lines.txt || true
+	rm number_of_Raven.txt || true
+	rm number_of_RAVEN.txt || true
+	rm number_of_raven.txt || true
+	#rm *.txt || true
 	ls -la

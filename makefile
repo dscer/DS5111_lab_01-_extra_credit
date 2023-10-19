@@ -22,6 +22,10 @@ number_of_raven.txt:
 .PHONY: all
 all: pg1065.txt raven_lines.txt number_of_Raven.txt number_of_RAVEN.txt number_of_raven.txt
 
+# Just a comment, there is something that caught me off guard, the OS treats all as case-insensitive, thus the names
+# of the files created by the jobs collide.  No worries, you did this right as you were not aware.  If you want you can rename the files so 
+# they don't collide, replacing the `number_of_` with `one_`, `two_` etc... let let me know if you do and we can add a couple more points for that.
+
 # make clean which should remove all files generated
 clean:
 	rm pg1065.txt || true
